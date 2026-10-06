@@ -1,0 +1,32 @@
+/* frontend/src/styles/theme.css */
+@import "tailwindcss";
+
+:root {
+    /* BRAND ACCENT (Change this single hex to re-theme the entire application) */
+    --color-primary: #E60067;
+    --color-primary-hover: #C50058;
+    --color-primary-light: #FDE8F1;
+
+    /* LIGHT MODE SURFACE PALETTE */
+    --bg-canvas: #F4F5F9;
+    --bg-card: #FFFFFF;
+    --text-main: #1C1827;
+    --text-muted: #71717A;
+    --border-subtle: #E4E4E7;
+
+    /* STATUS BADGE COLORS */
+    --status-preparing: #F59E0B;
+    --status-ready: #10B981;
+    --status-served: #06B6D4;
+    --status-cancelled: #EF4444;
+}
+
+/* DARK MODE OVERRIDES */
+.dark {
+    --bg-canvas: #12121A;
+    --bg-card: #1E1B2E;
+    --text-main: #F4F5F9;
+    --text-muted: #A1A1AA;
+    --border-subtle: #27272A;
+    --color-primary-light: #321525;
+}
