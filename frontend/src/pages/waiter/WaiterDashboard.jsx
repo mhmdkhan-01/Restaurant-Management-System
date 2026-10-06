@@ -1,7 +1,6 @@
 // frontend/src/pages/waiter/WaiterDashboard.jsx
 import React, { useState } from 'react';
 import { useWaiterSocket } from '../../hooks/useWaiterSocket';
-import '../../styles/theme.css';
 const WaiterDashboard = ({ waiterId = 'waiter_1', waiterName = 'Ali Hassan' }) => {
     const { assignedTables, loading, alerts, confirmPayment, dismissAlert } = useWaiterSocket(waiterId);
     const [selectedTable, setSelectedTable] = useState(null);
