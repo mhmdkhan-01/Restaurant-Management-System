@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useCustomerSocket } from '../../hooks/useCustomerSocket';
-
+import '../../styles/theme.css';
 const CustomerMenuPage = () => {
     const { tableId } = useParams(); // Reads table ID directly from URL scan
     const {

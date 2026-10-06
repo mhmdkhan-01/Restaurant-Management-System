@@ -112,7 +112,7 @@ export const useCustomerSocket = (tableId) => {
 
     const placeOrder = async (itemsToSubmit) => {
         // Use passed items if provided, otherwise default to current cart state
-        const targetItems = itemsToSubmit || cart;
+        const targetItems = itemsToSubmit;
 
         if (!targetItems || targetItems.length === 0 || !tableId) return;
 
@@ -140,7 +140,7 @@ export const useCustomerSocket = (tableId) => {
             }
 
             // 3. Clear local cart so previously ordered items aren't resubmitted
-            setCart([]);
+            // setCart([]);
 
             return res.data;
         } catch (err) {

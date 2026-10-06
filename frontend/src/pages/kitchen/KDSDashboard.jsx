@@ -1,7 +1,7 @@
 // frontend/src/pages/kitchen/KDSDashboard.jsx
 import React, { useState } from 'react';
 import { useKitchenSocket } from '../../hooks/useKitchenSocket';
-
+import '../../styles/theme.css';
 const KDSDashboard = () => {
     const { kitchenOrders, loading, startCooking, markReady } = useKitchenSocket();
     const [confirmReadyItem, setConfirmReadyItem] = useState(null); // Item modal for double confirmation
