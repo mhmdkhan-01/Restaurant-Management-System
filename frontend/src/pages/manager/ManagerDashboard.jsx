@@ -6,7 +6,6 @@ import AdminWaitersManager from '../admin/AdminWaitersManager';
 import AdminMenuItemsEditor from '../admin/AdminMenuItemsEditor';
 import AdminTablesManager from '../admin/AdminTablesManager';
 import TableQRPrinter from '../../components/manager/TableQRPrinter';
-import '../../styles/theme.css';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
